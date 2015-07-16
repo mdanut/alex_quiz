@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  
+  <class name="com.hpm.app.Questions" table="questions">
+     <id name="questionId" type="java.lang.Integer" column="id">
+         <generator class="identity"/>
+     </id>
+     <property name="question" type="string" column="question"/>
+     <property name="nomberOfCorrectAnswers" type="java.lang.Integer" column="no_correct_answers"/>
+  </class>
+  
+  <class name="com.hpm.app.Answers" table="answers">
+    <id name="answersId" type="java.lang.Integer" column="id">
+        <generator class="identity"/>
+    </id>
+    <property name="answers" type="string" column="answer"/>
+    <property name="score" type="double" column="score"/>
+  </class>
+
+</hibernate-mapping>
