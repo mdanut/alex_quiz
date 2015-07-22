@@ -3,6 +3,7 @@
 
 
 <!-- This is my modiffiication -->
+<!--Plese use uppercases for comments on this project-->
 
 <hibernate-configuration>
   <session-factory>
